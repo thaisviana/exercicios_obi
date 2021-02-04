@@ -1,0 +1,45 @@
+*, *::before, *::after{
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  -o-box-sizing: border-box;  
+}
+
+#containerFull {
+  margin: 0 auto;
+}
+
+#container {
+  border: 3px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+}
+
+.row {
+  clear: both;
+}
+
+.row div {
+  font-size: 3em;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-left: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
+  text-align: center;
+}
+
+.row div:first-child {
+  border-left: 0;
+}
+
+.line-1 div:nth-child(2n+1)  {
+  background: #000;
+  color: #FFF
+}
+
+.line-2 div:nth-child(2n)  {
+  background: #000;
+  color: #FFF
+}
